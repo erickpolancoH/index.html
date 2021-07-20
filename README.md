@@ -1,383 +1,129 @@
-# index.html
-
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="GEMD.css.css">
-    <link rel="stylesheet" media="(max-width: 800px)" href="GEMD.css.css" />
-   
-    <title>GEMD</title>
-   
- 
+    <title>Caja de Registro</title>
 </head>
-
 <body>
-<style>
-  @media (max-width: 600px) {
-  }
-@media (min-width: 700px) and (orientation: landscape) { 
-}
+    <style>
+        body{
+            background-color:black;
+            padding: 1%;
+            margin: 1%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
 
+        h1{
+            color: white;
+            border: solid rgb(255, 255, 0);
+            padding: 1%;
+            margin: 1% 0% 3% 0%;
+            background-color: transparent;
+            position: center;
+            font-size: 200%;
 
-body{
- background-color: white;
-box-sizing: content-box;
-margin: 1%;
-padding: 2%;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         
+        }
 
-}
+        h2{
+            color: white;
+            border: solid rgb(0, 140, 255);
+            padding: 1%;
+            margin: 1% 0% 1% 0%;
+            font-size: 100%;
 
-h1{
-  color:rgb(39, 39, 39);
-  background-color: transparent;
-  font-size: 40px;
-  padding: 4%;
-  margin-bottom: 4%;
-}
+            
+        }
 
-hr{ 
-  margin-bottom: 4%;
-}
-.container{
-  background-color:white;
-  width: 80%;
-  height: 450px;
-  padding: 4% ;
-  margin-bottom: 4%;
-  border-radius: 20%;
-  border-style: solid;
+        span {
+            color: yellowgreen;
+            border:solid white;
+            border-radius: 5%;
+            padding: 1%;
+            margin: 1%;
+            
+        }
+div{
+    padding: 1%;
+    margin: 1%;
+    width: 95%;
+    height: 200px;
+    background-color: transparent;
+    border: solid yellowgreen;
+    position: center;
 
-}
-
-.papi-image{
-  background-image: url(image20.png);
-  border-radius: 100%;
-  background-attachment: contain;
-  width: 70px;
-  height: 70px;
-  margin: 2% 2% 2%;
-
-
-
-}
-
-.mifoto{
-  background-position: relative;
-  border-radius: 100%;
-  width:100px ;
-  height:100px ;
-  display: inline;
-
-}
-
-
-.delis{
-  background-position: relative;
-  border-radius: 100%;
-  width:100px ;
-  height:100px ;
-  display: inline;
-
-}
-
-.padre{
-  background-color:transparent;
-  width: 100%;
-  height: 100px;
-  padding: 4%;
-  margin-bottom:8%;
-}
-
-
-h2{
-  color:rgb(39, 39, 39);
-  margin-bottom: 4%;
 }
 
 p{
-  color: #2f3640;
-  font-size: 17x;
+    color: rgb(255, 255, 0);
+    background-color: transparent;
+    border: solid greenyellow;
+    padding: 1%;
+    margin: 1%;
+   font-size: 75%;
+   font-weight: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.buttonmsg{
+color: white;
+background-color: blue;
+padding: 1%;
+margin: 1%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 
-
-
-a{
-  color: rgb(145, 193, 255);
-  background-color: black;
-  background-position: center;
-  position: relative;
-  text-decoration: none;
-  font-family: sans-serif, Bold;
-  font-weight: 2%;
-  font-size: 16px;
-  border: 1px;
-
-  padding: 2px;
-  width: 50px;
-  height:  50px;
-  padding: 4%;
-  margin: 4% 4% 4% 4%;
-  border-radius: 12%;
-  
-
-
-}
-
-
-
-h3{
-  color: #2f3640;
-font-family:  sans-serif,bold;
-}
-
-h4{
-  color:white;
-  font-family:  sans-serif,bold;
-  
- 
- 
-  } 
- /*estadisticas*/
-
-  .visitas{
-    background-position: relative;
-    background-color:transparent;
-    border-style:solid;
-    width: 90%;
-    height: 400px;
-    padding: 4%;
-    border-radius:12%;
-
-  }
-
-  .helper-blue{
-    background-position: relative;
-background-color: rgb(65, 65, 255);
-width: 15%;
-height:15px;
-  }
-
-  .helper-yellow{
-    background-position: relative;
-background-color: rgb(247, 210, 0);
-width: 30%;
-height:15px;
-  
-}
-
-.helper-green{
-  background-position: relative;
-background-color: rgb(0, 247, 12);
-width: 30%;
-height:15px;
-
-}
-  
- /*contador animado*/
-  .count::after {
-    font: 800 50px system-ui;
-    content: counter(count);
-    animation: counter 30s linear infinite alternate;
-    counter-reset: count 0;
-    animation-delay: 1s;
-    color:rgb(68, 187, 223);
-
-    font-size: 15px;
-  
-    
-  }
-
-  
-  /*stats*/
-  .column {
-    float: left;
-    width: 100%;
-    padding: 0px;
-    text-align: left;
-    font-size: 25px;
-    cursor: pointer;
-    color:black;
-  }
-  
-  .containerTab {
-    padding: 0px;
+input#btn-enviar{
     color: white;
-    width: 100%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    float: right;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
-/*Obtener nombre*/
+    background-color: red;
+   overflow: hidden;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 1%;
+margin: 1%;
+}
+
+    </style>
+
+<!--Cuentas de gastos-->
+
+    <h1>
+       GEMD Cajas De Registros :)
+    </h1>
+
+    <h2>Gastos / Estudio de musica / Pedales de sonido</h2>
+
  
-p {
-  margin: 24px 0;
-  line-height: 2;
-}
-
-.wrapper {
-  padding: 32px;
-}
-
-.cookie-container {
-  position: fixed;
-  bottom: -100%;
-  left: 0;
-  right: 0;
-  background: #2f3640;
-  color: #f5f6fa;
-  padding: 0 32px;
-  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
-
-  transition: 400ms;
-}
-
-.cookie-container.active {
-  bottom: 0;
-}
-
-.cookie-container a {
-  color: #f5f6fa;
-}
-
-.cookie-btn {
-  background: black;
-  border: 0;
-  color: rgb(68, 187, 223);
-  padding: 12px 48px;
-  font-size: 18px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-
-
-</style>
-  <header>
-    <div class="box-content">
-         <h1><strong> GEMD.com</strong>
-        
-         </h1>
-         
-         <nav>
-          <a href="gemd.html.html"><strong>Inicio</strong></a>
-          <a href="Contacto.html "><strong>contacto</strong></a>
-        
-        </nav>
-        <br><br><br>
-    </div>
-    <hr>
-<p>GEMD es el asistente medico en lineal para la búsqueda concreta del profesional medico,
-   en ella puedes buscar tu profesional y contactarla al numero correspondiente en la casilla correspondiente<br>El directorio medico Funciona para encontrar a tu personal medico y rápidamente llamar tu comunicarte con el profesional asignado.</p>
-    
-    </header>
-    <br><br>
-   
-<!--Cirugia general-->
-<hr>
-<h2>Cirugia General</h2>
-<div class="container">
-<div class="papi">
-<img class="papi-image" src="image20.png">
-<strong>Dr. Armando Polanco</strong>
-<hr>
-<p>Cirujano General!...</p>
-<p> Local.loc::INEMED </p>
-<p>San Fco. Macoris</p>
-<p>Consultorio::809-2443-586</p>
-<p>Dirección: Calle Rivas, Esq, Calle Colón #57, San Francisco de Macorís 31000</p>
-
-</div>
-</div>
-<hr>
-
-<h2>Cirugia Pediatrica</h2>
-<div class="container">
-  <div class="papi">
-  <img src="natasha.jpg"class="papi-image" >
-  <strong>Dra.Natasha Ferreiras </strong>
-  <hr>
-  <p>Cirujano Pediatra!...</p>
-  <p> Local.loc::INEMED </p>
-  <p>San Fco. Macoris</p>
-  <p>Consultorio::(809) 449-3535</p>
-  <p>Dirección: Calle Rivas, Esq, Calle Colón #57, San Francisco de Macorís 31000</p>
-  
-  </div>
-  </div>
-
-  <h2>//:Equipo.team::</h2>
-<div class="padre">
-  <img src="Mifoto..jpg" class="mifoto" >
-    
-    <img src="zelenhia.jpg" class="delis" >
-    
-</div>
-<hr>
-
-<h2>//:Tablero-GEMD::</h2>
-
-</div>
-
-
-
-
-
-<!--Chart-->
-
-<div class="visitas">
-<h2>Visitas (0)</h2>
-<div class="helper-blue">0</div>
-<h2>Clicks(30%)</h2>
-<div class="helper-yellow">0</div>
-<h2>Interaccion(30%)</h2>
-<div class="helper-green">0</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="cookie-container">
-      <p>
-        Esta web contiene políticas de cookies para un mejor funcionamiento.
-        <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-      </p>
-
-      <button class="cookie-btn">
-        Okay
-      </button>
-    </div>
-  </div><!-- JavaScript Bundle with Popper -->
+        <p>Pedal Bass Compressor / pressure point.<span>DOP 1,904</span></p>
+        <p>Litle Bear / Guitar Pedal.<span> DOP 2,800</span> </p>
+        <p>Stax Booster / Bass Pedal.<span>DOP 1960</span></p>
+        <p>Stax flanger / Bass Pedal.<span>DOP 2,000</span></p>
+        <button id="Buttonmsg" class="buttonmsg" onclick="showmsg()">Valor Total</button>
+       
+       
+      <!--Archivos subidos-->
+       
  
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script src="Gemd.js"></script>
 
-</html>`
+<h2>Documentos subidos</h2>
+
+<form action="procesar.php" method="">
+
+    <input type="file" id="btn-enviar" class="enviar">
+</form>
+
+
+
+
+        <script>
+            function showmsg (){
+                window.alert("El valor total es de [8,694]");
+            }
+        </script>
+</body>
+</html>
